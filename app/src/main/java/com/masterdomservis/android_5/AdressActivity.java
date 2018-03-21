@@ -26,7 +26,7 @@ public class AdressActivity extends AppCompatActivity implements View.OnClickLis
 
         switch (v.getId()){
             case R.id.map_button:
-                intent = new Intent("android.intent.action.KARTA");
+                intent = new Intent("android.intent.action.KART");
                 startActivity(intent);
                 break;}
 

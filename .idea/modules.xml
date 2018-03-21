@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_project_1.0.iml" filepath="$PROJECT_DIR$/Android_project_1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson-2.8.2/gson-2.8.2.iml" filepath="$PROJECT_DIR$/gson-2.8.2/gson-2.8.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpclient-4.5.5/httpclient-4.5.5.iml" filepath="$PROJECT_DIR$/httpclient-4.5.5/httpclient-4.5.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpcore-4.4.9/httpcore-4.4.9.iml" filepath="$PROJECT_DIR$/httpcore-4.4.9/httpcore-4.4.9.iml" />
       <module fileurl="file://$PROJECT_DIR$/settings_activity/settings_activity.iml" filepath="$PROJECT_DIR$/settings_activity/settings_activity.iml" />
     </modules>
   </component>

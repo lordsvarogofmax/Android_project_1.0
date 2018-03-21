@@ -1,54 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <TextView
             android:id="@+id/item_text_declar_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/item_text_declar_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:srcCompat="@drawable/master_hum"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button_maps2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getMaps"
+            android:text="Исполнено" />
+
+        <Button
+            android:id="@+id/button_maps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getMaps"
+            android:text="Адрес на карте" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

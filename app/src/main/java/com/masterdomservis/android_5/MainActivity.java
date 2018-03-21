@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.adress_button:
-                intent = new Intent("android.intent.action.ADRESS");
+                intent = new Intent("android.intent.action.KARTA");
                 startActivity(intent);
                 break;
             case R.id.help_button:

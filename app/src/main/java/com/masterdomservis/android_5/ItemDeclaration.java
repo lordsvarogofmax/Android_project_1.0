@@ -1,11 +1,13 @@
 package com.masterdomservis.android_5;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -31,8 +33,6 @@ public class ItemDeclaration extends AppCompatActivity{
         TextView item_text_declar_6 = (TextView) findViewById(R.id.item_text_declar_6);
         TextView item_text_declar_7 = (TextView) findViewById(R.id.item_text_declar_7);
 
-
-
         item_text_declar_1.setText(declaration.toString());
         item_text_declar_2.setText(declaration.getDECLARATION());
         item_text_declar_3.setText(declaration.getFIO());
@@ -40,5 +40,11 @@ public class ItemDeclaration extends AppCompatActivity{
         item_text_declar_5.setText(declaration.getZAPLANIR());
         item_text_declar_6.setText(declaration.getTELEFON());
         //item_text_declar_7.setText(declaration.toString());
+    }
+
+    public void getMaps(View view){
+        Intent intent = new Intent("android.intent.action.KARTA");
+        intent.putExtra("adress", "Dom 4" );
+        startActivity(intent);
     }
 }
