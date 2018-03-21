@@ -1,1 +1,1 @@
-include ':app', ':settings_activity'
+include ':app', ':settings_activity', ':httpclient-4.5.5', ':httpcore-4.4.9', ':gson-2.8.2'
