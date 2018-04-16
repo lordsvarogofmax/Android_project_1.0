@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        if (LocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+        if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
@@ -53,13 +53,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     double longtitude = location.getLongitude();
                     LatLng latLng = new LatLng(latitude, longtitude);
                     Geocoder geocoder;
-                    Geocoder = geocoder = new Geocoder(getApplicationContext());
+                    geocoder = new Geocoder(getApplicationContext());
                     try {
                         List<Address> addressList = geocoder.getFromLocation(latitude, longtitude, 1);
                         String str = addressList.get(0).getLocality()+",";
                         str += addressList.get(0).getCountryName();
                         mMap.addMarker(new MarkerOptions().position(latLng).title(str));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng, 10.2f));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10.2f));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -80,7 +80,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 }
             });
-        } else if (LocationManager.isProvederEnadled(LocationManager.GPS_PROVIDER)){
+        } else if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
                     locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
