@@ -1,0 +1,7 @@
+<root>
+    <item name='android.location.LocationManager boolean isProviderEnabled(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="pure" val="true" />
+        </annotation>
+    </item>
+</root>
